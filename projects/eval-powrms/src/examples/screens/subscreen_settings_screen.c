@@ -50,7 +50,7 @@ void subscreen_settings_screen()
 
 		// Grid descriptors
 		lv_coord_t col_dsc[] = {
-			LV_GRID_FR(20),  // Name column
+			LV_GRID_FR(14),  // Name column
 			LV_GRID_FR(1),   // Digit 1
 			LV_GRID_FR(1),   // Digit 2
 			LV_GRID_FR(1),   // Digit 3
@@ -71,6 +71,8 @@ void subscreen_settings_screen()
 		};
 
 		lv_obj_t *screen = get_global_screen();
+		lv_obj_set_style_pad_all(screen, 0,
+					 0);  // Remove padding to maximize usable space
 		lv_obj_set_grid_dsc_array(screen, col_dsc, row_dsc);
 
 		for (int row = 0; row < NR_OF_INPUT_VARIABLES ; row++) {

@@ -19,6 +19,7 @@ SRCS += $(DRIVERS)/api/no_os_uart.c    \
         $(NO-OS)/util/no_os_font_8x8.c  \
         $(NO-OS)/util/no_os_display.c   \
         $(NO-OS)/util/no_os_mutex.c     \
+        $(PROJECT)/src/lv_font_terminus_16.c
 
 
 INCS += $(INCLUDE)/no_os_delay.h        \
